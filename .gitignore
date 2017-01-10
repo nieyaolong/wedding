@@ -54,3 +54,5 @@ jspm_packages
 *.js
 *.js.map
 /.ignore
+/npm-debug.log.1555246619
+!/app.js
