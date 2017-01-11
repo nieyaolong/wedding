@@ -57,3 +57,4 @@ jspm_packages
 /npm-debug.log.1555246619
 !/app.js
 /bower_components/
+!/public/js/*.js
