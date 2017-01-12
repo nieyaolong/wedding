@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.0.34",
-    "@types/node": "^6.0.58"
+    "@types/node": "^6.0.58",
+    "yuicompressor": "^2.4.8"
   }
 }
