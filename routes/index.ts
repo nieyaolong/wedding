@@ -50,8 +50,7 @@ router.get('/:id', (req, res) => {
     const location = '山东禹城';
     let salutation = gender == 'm' ? '先生': '女士';
     res.render('invitation', {
-        title: '邀请函',
-        description: `${name}${salutation}钧啟`,
+        title: `${name}${salutation}钧啟`,
         bridegroom: bridegroom,
         bride: bride,
         date: date.format('GGGG年MM月DD日 dddd'),
