@@ -1,6 +1,10 @@
 extends layout
 
 block content
-  h1 结婚归结婚，日子还是要过，BUG还是要出
-  h2= error.status
-  pre #{error.stack}
+  header
+    .header-content
+      .header-content-inner
+        h1#homeHeading 出BUG啦
+  section.bg-warning
+    h2.subheading= error.status
+    pre.bg-warning.subheading #{error.stack}
