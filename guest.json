@@ -1,0 +1,24 @@
+{
+  "guests": {
+    "lichao":{
+      "name":"栗超",
+      "male":true
+    },
+    "zhangyu":{
+      "name":"张宇",
+      "male":true
+    },
+    "zhangyuan":{
+      "name":"张元",
+      "male":true
+    },
+    "taozhou":{
+      "name":"陶舟",
+      "male":true
+    },
+    "yanglufei":{
+      "name":"杨鲁飞",
+      "male":false
+    }
+  }
+}
