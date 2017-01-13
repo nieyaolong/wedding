@@ -48,8 +48,10 @@ router.get('/:id', (req, res) => {
     const feast_date = moment('2017-1-19 12:00 ');
     const address = '山东省禹城市明珠大酒店';
     const location = '山东禹城';
+    let salutation = gender == 'm' ? '先生': '女士';
     res.render('invitation', {
         title: '邀请函',
+        description: `${name}${salutation}钧啟`,
         bridegroom: bridegroom,
         bride: bride,
         date: date.format('GGGG年MM月DD日 dddd'),
@@ -59,7 +61,7 @@ router.get('/:id', (req, res) => {
         location: location,
         address: address,
         name : name,
-        salutation : gender == 'm' ? '先生': '女士',
+        salutation : salutation,
         relation: gender == 'm' ? '兄台': '惠姐',
     });
 });
