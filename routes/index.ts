@@ -27,6 +27,16 @@ router.get('/', (req, res) => {
 moment.locale('zh-cn');
 const guestInfo = require("../guest.json").guests;
 
+router.get('/guest', (req, res) => {
+    let html:string = '';
+    for(let id in guestInfo) {
+        if(guestInfo.hasOwnProperty(id)) {
+            html += `<a href='/${id}'>${guestInfo[id].name}</a><br/>`
+        }
+    }
+    return res.send(html);
+});
+
 /* GET home page. */
 router.get('/:id', (req, res) => {
     let id:string = req.params.id;
