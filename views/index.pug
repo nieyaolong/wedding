@@ -1,191 +1,159 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='')
-    meta(name='author', content='')
-    title= title
-    // Bootstrap Core CSS
-    link(href='css/bootstrap.min.css', rel='stylesheet')
-    // Custom Fonts
-    link(href='css/font-awesome.min.css', rel='stylesheet', type='text/css')
-    // Plugin CSS
-    link(href='css/magnific-popup.css', rel='stylesheet')
-    // Theme CSS
-    link(href='//cdn.webfont.youziku.com/webfonts/nomal/97629/45803/58771ba9f629da13a4a8c7e5.css' rel='stylesheet' type='text/css')
-    link(href='css/creative.min.css', rel='stylesheet')
-    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-    // WARNING: Respond.js doesn't work if you view the page via file://
-    //if lt IE 9
-      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
-      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-  body#page-top
-    nav#mainNav.navbar.navbar-default.navbar-fixed-top
-      .container-fluid
-        // Brand and toggle get grouped for better mobile display
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-            span.sr-only Toggle navigation
-            |  导航
-            i.fa.fa-bars
-          //a.navbar-brand.page-scroll(href='#page-top')
-        // Collect the nav links, forms, and other content for toggling
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-right
-            li
-              a.page-scroll(href='#about') 关于我们
-            li
-              a.page-scroll(href='#event') 时间地点
-            li
-              a.page-scroll(href='#gallery') 相册
-            li
-              a.page-scroll(href='#contact') 联系我们
-        // /.navbar-collapse
-      // /.container-fluid
-    header
-      .header-content
-        .header-content-inner
-          h1#homeHeading 我们结婚啦！
-          hr
-          p
-            | #{date} ♥ #{location}
-          a.btn.btn-primary.btn-xl.page-scroll(href='#about') 我们的故事
-    section#about.bg-primary
-      .container
-        .row
-          .col-lg-12.text-center
-            h2.section-heading 俺俩的故事
-            h3.section-subheading.text-muted 第一章
-        .row
-          .col-lg-12
-            ul.timeline
-              li
-                .timeline-image
-                  img.img-circle.img-responsive(src='img/about/1.jpg', alt='')
-                .timeline-panel
-                  .timeline-heading
-                    h4 1987年4月 1988年3月
-                    h4.subheading
-                  .timeline-body
-                    p.text-muted
-                      | 俺俩都出生在山东省禹城市
-              li.timeline-inverted
-                .timeline-image
-                  img.img-circle.img-responsive(src='img/about/2.jpg', alt='')
-                .timeline-panel
-                  .timeline-heading
-                    h4 2002年-2005年
-                    h4.subheading 高中俺俩分到一个班上
-                  .timeline-body
-                    p.text-muted
-                      | 后来忘了么时候就拉上对象了
-              li
-                .timeline-image
-                  img.img-circle.img-responsive(src='img/about/3.jpg', alt='')
-                .timeline-panel
-                  .timeline-heading
-                    h4 2016年9月19日
-                    h4.subheading 求婚成功
-                  .timeline-body
-                    p.text-muted
-                      | 实际上还没求,她个人就把戒指戴上了
-              li.timeline-inverted
-                .timeline-image
-                  img.img-circle.img-responsive(src='img/about/4.jpg', alt='')
-                .timeline-panel
-                  .timeline-heading
-                    h4 2017年1月18日
-                    h4.subheading 终于要结婚咯
-                  //.timeline-body
-                  //  p.text-muted
-                  //    | 虽然有点仓促
-              li.timeline-inverted
-                .timeline-image
-                  h4
-                    | To Be
-                    br
-                    | Continued.
-    section#event
-      .container
-        .row
-          .col-lg-12.text-center
-            h2.section-heading 时间地点
-            hr.primary
-      .container
-        .row
-          .col-lg-6.col-md-6.text-center
-            .service-box
-              i.fa.fa-4x.fa-diamond.text-primary.sr-icons
-              h3 婚礼仪式
-              p #{date}中午于#{address}进行
-          .col-lg-6.col-md-6.text-center
-            .service-box
-              i.fa.fa-4x.fa-beer.text-primary.sr-icons
-              h3 回门宴
-              p #{feast_date}于#{feast_address}进行
-        .row
-          .col-lg-6.col-md-6.text-center
-            .service-box
-              a.page-scroll.btn.btn-primary.btn-xl.sr-button(href='#event') 参加婚礼
-          .col-lg-6.col-md-6.text-center
-            .service-box
-              a.page-scroll.btn.btn-primary.btn-xl.sr-button(href='#contact') 送上祝福
+extends layout
 
-    section#gallery.no-padding
-      .container-fluid
-        .row.no-gutter.popup-gallery
-          .col-lg-4.col-sm-6
-            a.portfolio-box(href='img/portfolio/fullsize/1.jpg')
-              img.img-responsive(src='img/portfolio/thumbnails/1.jpg', alt='')
-              //.portfolio-box-caption
-              //  .portfolio-box-caption-content
-              //    .project-category.text-faded
-              //      | Category
-              //    .project-name
-              //      | Project Name
-          .col-lg-4.col-sm-6
-            a.portfolio-box(href='img/portfolio/fullsize/2.jpg')
-              img.img-responsive(src='img/portfolio/thumbnails/2.jpg', alt='')
-          .col-lg-4.col-sm-6
-            a.portfolio-box(href='img/portfolio/fullsize/3.jpg')
-              img.img-responsive(src='img/portfolio/thumbnails/3.jpg', alt='')
-          .col-lg-4.col-sm-6
-            a.portfolio-box(href='img/portfolio/fullsize/4.jpg')
-              img.img-responsive(src='img/portfolio/thumbnails/4.jpg', alt='')
-          .col-lg-4.col-sm-6
-            a.portfolio-box(href='img/portfolio/fullsize/5.jpg')
-              img.img-responsive(src='img/portfolio/thumbnails/5.jpg', alt='')
-          .col-lg-4.col-sm-6
-            a.portfolio-box(href='img/portfolio/fullsize/6.jpg')
-              img.img-responsive(src='img/portfolio/thumbnails/6.jpg', alt='')
-    //aside.bg-dark
-    //  .container.text-center
-    //    .call-to-action
-    //      h2 Free Download at Start Bootstrap!
-    //      a.btn.btn-default.btn-xl.sr-button(href='http://startbootstrap.com/template-overviews/creative/') Download Now!
-    section#contact
-      .container
-        .row
-          .col-lg-8.col-lg-offset-2.text-center
-            h2.section-heading 联系我们
-            hr.primary
-          .col-lg-4.col-lg-offset-2.text-center
-            i.fa.fa-phone.fa-3x.sr-contact
-            p 123-456-6789
-          .col-lg-4.text-center
-            i.fa.fa-envelope-o.fa-3x.sr-contact
-            p
-              a(href='mailto:your-email@your-domain.com') feedback@startbootstrap.com
-    // jQuery
-    script(src='/js/jquery.min.js')
-    // Bootstrap Core JavaScript
-    script(src='js/bootstrap.min.js')
-    // Plugin JavaScript
-    script(src='js/jquery.easing.min.js')
-    script(src='js/scrollreveal.min.js')
-    script(src='js/jquery.magnific-popup.min.js')
-    // Theme JavaScript
-    script(src='js/creative.min.js')
+block content
+  nav#mainNav.navbar.navbar-default.navbar-fixed-top
+    .container-fluid
+      // Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          span.sr-only Toggle navigation
+          i.fa.fa-bars
+        a.navbar-brand.page-scroll(href='#page-top') #{bridegroom} & #{bride}
+      // Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li
+            a.page-scroll(href='#about') 关于我们
+          li
+            a.page-scroll(href='#event') 时间地点
+          li
+            a.page-scroll(href='#gallery') 相册
+          li
+            a.page-scroll(href='#contact') 联系我们
+      // /.navbar-collapse
+    // /.container-fluid
+  header
+    .header-content
+      .header-content-inner
+        h1#homeHeading 我们结婚啦
+        hr
+        p
+          | #{date} ♥ #{location}
+        a.btn.btn-primary.btn-xl.page-scroll(href='#about') 我们的故事
+  section#about.bg-primary
+    .container
+      .row
+        .col-lg-12.text-center
+          h2.section-heading 俺俩的故事
+          h3.section-subheading.text-muted 第一章
+      .row
+        .col-lg-12
+          ul.timeline
+            li
+              .timeline-image
+                img.img-circle.img-responsive(src='img/about/1.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 1987年4月 1988年3月
+                  h4.subheading
+                .timeline-body
+                  p.text-muted
+                    | 俺俩都出生在山东省禹城市
+            li.timeline-inverted
+              .timeline-image
+                img.img-circle.img-responsive(src='img/about/2.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 2002年-2005年
+                  h4.subheading 高中俺俩分到一个班上
+                .timeline-body
+                  p.text-muted
+                    | 后来忘了么时候就拉上对象了
+            li
+              .timeline-image
+                img.img-circle.img-responsive(src='img/about/3.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 2016年9月19日
+                  h4.subheading 求婚成功
+                .timeline-body
+                  p.text-muted
+                    | 实际上还没求,她个人就把戒指戴上了
+            li.timeline-inverted
+              .timeline-image
+                img.img-circle.img-responsive(src='img/about/4.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 2017年1月18日
+                  h4.subheading 终于要结婚咯
+                //.timeline-body
+                //  p.text-muted
+                //    | 虽然有点仓促
+            li.timeline-inverted
+              .timeline-image
+                h4
+                  | To Be
+                  br
+                  | Continued.
+  section#event
+    .container
+      .row
+        .col-lg-12.text-center
+          h2.section-heading 时间地点
+          hr.primary
+    .container
+      .row
+        .col-lg-6.col-md-6.text-center
+          .service-box
+            i.fa.fa-4x.fa-diamond.text-primary.sr-icons
+            h3 婚礼仪式
+            p #{date}中午于#{address}进行
+        .col-lg-6.col-md-6.text-center
+          .service-box
+            i.fa.fa-4x.fa-beer.text-primary.sr-icons
+            h3 回门宴
+            p #{feast_date}于#{feast_address}进行
+      .row
+        .col-lg-6.col-md-6.text-center
+          .service-box
+            a.page-scroll.btn.btn-primary.btn-xl.sr-button(href='#event') 参加婚礼
+        .col-lg-6.col-md-6.text-center
+          .service-box
+            a.page-scroll.btn.btn-primary.btn-xl.sr-button(href='#contact') 送上祝福
+
+  section#gallery.no-padding
+    .container-fluid
+      .row.no-gutter.popup-gallery
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='img/portfolio/fullsize/1.jpg')
+            img.img-responsive(src='img/portfolio/thumbnails/1.jpg', alt='')
+            //.portfolio-box-caption
+            //  .portfolio-box-caption-content
+            //    .project-category.text-faded
+            //      | Category
+            //    .project-name
+            //      | Project Name
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='img/portfolio/fullsize/2.jpg')
+            img.img-responsive(src='img/portfolio/thumbnails/2.jpg', alt='')
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='img/portfolio/fullsize/3.jpg')
+            img.img-responsive(src='img/portfolio/thumbnails/3.jpg', alt='')
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='img/portfolio/fullsize/4.jpg')
+            img.img-responsive(src='img/portfolio/thumbnails/4.jpg', alt='')
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='img/portfolio/fullsize/5.jpg')
+            img.img-responsive(src='img/portfolio/thumbnails/5.jpg', alt='')
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='img/portfolio/fullsize/6.jpg')
+            img.img-responsive(src='img/portfolio/thumbnails/6.jpg', alt='')
+  //aside.bg-dark
+  //  .container.text-center
+  //    .call-to-action
+  //      h2 Free Download at Start Bootstrap!
+  //      a.btn.btn-default.btn-xl.sr-button(href='http://startbootstrap.com/template-overviews/creative/') Download Now!
+  section#contact
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          h2.section-heading 联系我们
+          hr.primary
+        .col-lg-4.col-lg-offset-2.text-center
+          i.fa.fa-phone.fa-3x.sr-contact
+          p 123-456-6789
+        .col-lg-4.text-center
+          i.fa.fa-envelope-o.fa-3x.sr-contact
+          p
+            a(href='mailto:your-email@your-domain.com') feedback@startbootstrap.com
 

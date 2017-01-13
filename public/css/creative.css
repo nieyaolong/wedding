@@ -53,6 +53,17 @@ p {
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
+.text-invitation {
+  color: white;
+  line-height: 30px;
+}
+.text-invitation-bridegroom {
+  margin-top: -60px;
+  line-height: 10px;
+}
+.text-invitation-bride {
+
+}
 section {
   padding: 100px 0;
 }

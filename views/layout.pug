@@ -1,13 +1,35 @@
 doctype html
-html
+html(lang='en')
     head
-        title= title
-        link(rel='stylesheet', href='/css/bootstrap.min.css')
-
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         meta(name='viewport', content='width=device-width, initial-scale=1')
-    body
+        meta(name='description', content='')
+        meta(name='author', content='')
+        title= title
+        // Bootstrap Core CSS
+        link(href='css/bootstrap.min.css', rel='stylesheet')
+        // Custom Fonts
+        link(href='css/font-awesome.min.css', rel='stylesheet', type='text/css')
+        // Plugin CSS
+        link(href='css/magnific-popup.css', rel='stylesheet')
+        // Theme CSS
+        link(href='//cdn.webfont.youziku.com/webfonts/nomal/97629/45803/58771ba9f629da13a4a8c7e5.css' rel='stylesheet' type='text/css')
+        link(href='css/creative.min.css', rel='stylesheet')
+        // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+        // WARNING: Respond.js doesn't work if you view the page via file://
+        //if lt IE 9
+          script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+          script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+
+    body#page-top
         block content
         script(src='/js/jquery.min.js')
-        script(src='/js/bootstrap.min.js')
+        // Bootstrap Core JavaScript
+        script(src='js/bootstrap.min.js')
+        // Plugin JavaScript
+        script(src='js/jquery.easing.min.js')
+        script(src='js/scrollreveal.min.js')
+        script(src='js/jquery.magnific-popup.min.js')
+        // Theme JavaScript
+        script(src='js/creative.min.js')

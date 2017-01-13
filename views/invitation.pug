@@ -1,0 +1,42 @@
+extends layout
+
+block content
+
+  header
+    .header-content
+      .header-content-inner
+        h1#homeHeading 我们结婚啦
+        hr
+        p
+          | #{date} ♥ #{location}
+        a.btn.btn-primary.btn-xl.page-scroll(href='#invitation') 查看请柬
+  section#invitation.bg-primary
+    .container
+      h2.section-heading.text-center 请柬
+      .row
+        .col-xs-12.col-md-offset-2.col-lg-offset-3
+          p.text-invitation 呈送 #{name}#{salutation} 台启
+          p.text-invitation
+            | 谨定于公历 #{feast_date}
+          p.text-invitation
+            | &#12288;&#12288;&#12288;农历 #{lunar_date}
+          p.text-invitation
+            | 为
+            | &#12288; &#12288;&#12288;
+            | 敬备回门喜宴
+          p.text-invitation-bridegroom
+            | &#12288; #{bridegroom}
+          p.text-invitation-bride
+            | &#12288; #{bride}
+          p.text-invitation
+            | 恭请 #{relation} 届时光临
+          p.text-invitation
+            | 吉时：#{time}
+          p.text-invitation
+            | 祥地：#{address}
+          p.text-invitation
+            | &#12288; &#12288;&#12288;&#12288; &#12288;&#12288;&#12288; &#12288;&#12288;敬请
+          p.text-invitation-bridegroom
+            | &#12288; &#12288;&#12288;&#12288; &#12288;&#12288;#{bridegroom}
+          p.text-invitation-bride
+            | &#12288; &#12288;&#12288;&#12288; &#12288;&#12288;#{bride}

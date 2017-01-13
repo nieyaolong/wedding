@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
     const location = '山东禹城';
     const address = '山东省禹城市金穗大酒店';
     res.render('index', {
-        title: '欢迎光临',
+        title: `#${bridegroom}和${bride}的婚礼`,
         bridegroom: bridegroom,
         bride: bride,
         date: date.toLocaleDateString(),
