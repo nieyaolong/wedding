@@ -103,6 +103,26 @@
     "yangxiaoyu":{
       "name":"杨晓宇",
       "male":true
+    },
+    "zanchunyu":{
+      "name":"昝春雨",
+      "male":false
+    },
+    "shaomeng":{
+      "name":"邵蒙",
+      "male":true
+    },
+    "yangxiaoyu":{
+      "name":"杨晓宇",
+      "male":true
+    },
+    "wangjian":{
+      "name":"王健",
+      "male":true
+    },
+    "wenfuyan":{
+      "name":"温付岩",
+      "male":true
     }
   }
 }

@@ -56,7 +56,7 @@ router.get('/:id', (req, res) => {
     const bride = '高颖慧';
     const date = moment('2017-1-18 12:00 ');
     const feast_date = moment('2017-1-19 12:00 ');
-    const address = '山东省禹城市明珠大酒店';
+    const address = '山东省禹城市明珠大酒店三楼';
     const location = '山东禹城';
     let salutation = gender == 'm' ? '先生': '女士';
     res.render('invitation', {
