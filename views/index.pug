@@ -19,7 +19,7 @@ block content
           li
             a.page-scroll(href='#gallery') 相册
           li
-            a.page-scroll(href='#contact') 联系我们
+            a.page-scroll(href='#contact') 送上祝福
       // /.navbar-collapse
     // /.container-fluid
   header
@@ -34,7 +34,7 @@ block content
     .container
       .row
         .col-lg-12.text-center
-          h2.section-heading 俺俩的故事
+          h2.section-heading 我们的故事
           h3.section-subheading.text-muted 第一章
       .row
         .col-lg-12
@@ -44,41 +44,40 @@ block content
                 img.img-circle.img-responsive(src='img/about/1.jpg', alt='')
               .timeline-panel
                 .timeline-heading
-                  h4 1987年4月 1988年3月
-                  h4.subheading
+                  h4.text-normal 1987年4月 1988年3月
+                  h4.subheading.text-normal 出生
                 .timeline-body
-                  p.text-muted
-                    | 俺俩都出生在山东省禹城市
+                  i.text-faded.text-normal 也是我的颜值巅峰
             li.timeline-inverted
               .timeline-image
                 img.img-circle.img-responsive(src='img/about/2.jpg', alt='')
               .timeline-panel
                 .timeline-heading
-                  h4 2002年-2005年
-                  h4.subheading 高中俺俩分到一个班上
+                  h4.text-normal 2002年9月
+                  h4.subheading.text-normal 相识
                 .timeline-body
-                  p.text-muted
-                    | 后来忘了么时候就拉上对象了
+                  i.text-faded.text-normal
+                    | 恩，因为被分到了一个班上
             li
               .timeline-image
                 img.img-circle.img-responsive(src='img/about/3.jpg', alt='')
               .timeline-panel
                 .timeline-heading
-                  h4 2016年9月19日
-                  h4.subheading 求婚成功
+                  h4.text-normal 2005年?月?日
+                  h4.subheading.text-normal 相恋
                 .timeline-body
-                  p.text-muted
-                    | 实际上还没求,她个人就把戒指戴上了
+                  i.text-faded.text-normal
+                    | 毛主席连党的生日都能忘，所以这种事就不用在意了
             li.timeline-inverted
-              .timeline-image
-                img.img-circle.img-responsive(src='img/about/4.jpg', alt='')
-              .timeline-panel
-                .timeline-heading
-                  h4 2017年1月18日
-                  h4.subheading 终于要结婚咯
-                //.timeline-body
-                //  p.text-muted
-                //    | 虽然有点仓促
+                  .timeline-image
+                    img.img-circle.img-responsive(src='img/about/4.jpg', alt='')
+                  .timeline-panel
+                    .timeline-heading
+                      h4.text-normal 2016年9月19日
+                      h4.subheading.text-normal 求婚
+                    .timeline-body
+                      i.text-faded.text-normal
+                        | 图案仅供参考，请以实物为准
             li.timeline-inverted
               .timeline-image
                 h4
@@ -95,34 +94,20 @@ block content
       .row
         .col-lg-6.col-md-6.text-center
           .service-box
-            i.fa.fa-4x.fa-diamond.text-primary.sr-icons
+            i.icon.iconfont.icon-bhjwedding.text-primary.sr-icons
             h3 婚礼仪式
             p #{date}中午于#{address}进行
         .col-lg-6.col-md-6.text-center
           .service-box
-            i.fa.fa-4x.fa-beer.text-primary.sr-icons
+            i.icon.iconfont.icon-juhui.text-primary.sr-icons
             h3 回门宴
             p #{feast_date}于#{feast_address}进行
-      .row
-        .col-lg-6.col-md-6.text-center
-          .service-box
-            a.page-scroll.btn.btn-primary.btn-xl.sr-button(href='#event') 参加婚礼
-        .col-lg-6.col-md-6.text-center
-          .service-box
-            a.page-scroll.btn.btn-primary.btn-xl.sr-button(href='#contact') 送上祝福
-
   section#gallery.no-padding
     .container-fluid
       .row.no-gutter.popup-gallery
         .col-lg-4.col-sm-6
           a.portfolio-box(href='img/portfolio/fullsize/1.jpg')
             img.img-responsive(src='img/portfolio/thumbnails/1.jpg', alt='')
-            //.portfolio-box-caption
-            //  .portfolio-box-caption-content
-            //    .project-category.text-faded
-            //      | Category
-            //    .project-name
-            //      | Project Name
         .col-lg-4.col-sm-6
           a.portfolio-box(href='img/portfolio/fullsize/2.jpg')
             img.img-responsive(src='img/portfolio/thumbnails/2.jpg', alt='')
@@ -138,22 +123,19 @@ block content
         .col-lg-4.col-sm-6
           a.portfolio-box(href='img/portfolio/fullsize/6.jpg')
             img.img-responsive(src='img/portfolio/thumbnails/6.jpg', alt='')
-  //aside.bg-dark
-  //  .container.text-center
-  //    .call-to-action
-  //      h2 Free Download at Start Bootstrap!
-  //      a.btn.btn-default.btn-xl.sr-button(href='http://startbootstrap.com/template-overviews/creative/') Download Now!
   section#contact
     .container
       .row
         .col-lg-8.col-lg-offset-2.text-center
-          h2.section-heading 联系我们
+          h2.section-heading 送上祝福
           hr.primary
-        .col-lg-4.col-lg-offset-2.text-center
-          i.fa.fa-phone.fa-3x.sr-contact
-          p 123-456-6789
-        .col-lg-4.text-center
-          i.fa.fa-envelope-o.fa-3x.sr-contact
-          p
-            a(href='mailto:your-email@your-domain.com') feedback@startbootstrap.com
+      .row.no-gutter.popup-gallery
+        .col-lg-6.col-md-6.text-center
+          a.portfolio-box(href='img/contact/weixin.jpg')
+            i(style="color:#62b900").icon.iconfont.icon-weixin.sr-contact
+          p 微信号：#{weixin}
+        .col-lg-6.col-md-6.text-center
+          a.portfolio-box(href='img/contact/alipay.jpg')
+            i(style="color:#0080ff").icon.iconfont.icon-zhifubao.text-primary.sr-contact
+          p 支付宝账号：#{alipay}
 

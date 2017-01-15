@@ -20,7 +20,9 @@ router.get('/', (req, res) => {
         feast_date: feast_date.toLocaleDateString(),
         feast_address: feast_address,
         location: location,
-        address: address
+        address: address,
+        weixin: "nieyaolong",
+        alipay: "nieyaolong@163.com"
     });
 });
 
