@@ -7,7 +7,7 @@ block content
       .navbar-header
         button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
           span.sr-only Toggle navigation
-          i.fa.fa-bars
+          i(style="font-size:16px").icon.iconfont.icon-nav.text-primary
         a.navbar-brand.page-scroll(href='#page-top') #{bridegroom} & #{bride}
       // Collect the nav links, forms, and other content for toggling
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
@@ -102,11 +102,11 @@ block content
             i.icon.iconfont.icon-juhui.text-primary.sr-icons
             h3 回门宴
             p #{feast_date}于#{feast_address}进行
-  section#gallery.no-padding.bg-primary
-    container
-      h2.section-heading.text-center 相册
+  section#gallery.bg-primary
+    .container
       .row
         .col-lg-12.text-center
+          h2.section-heading.text-center 相册
           h3.section-subheading.text-faded.text-normal 图片未经PS，随时可能被要求替换图片，请于24小时内删除
     .container-fluid
       .row.no-gutter.popup-gallery
