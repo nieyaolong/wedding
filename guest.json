@@ -112,16 +112,20 @@
       "name":"邵蒙",
       "male":true
     },
-    "yangxiaoyu":{
-      "name":"杨晓宇",
-      "male":true
-    },
     "wangjian":{
       "name":"王健",
       "male":true
     },
     "wenfuyan":{
       "name":"温付岩",
+      "male":true
+    },
+    "huolei":{
+      "name":"霍雷",
+      "male":true
+    },
+    "lixinsheng":{
+      "name":"李新生",
       "male":true
     }
   }
