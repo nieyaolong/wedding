@@ -17,6 +17,10 @@ body {
 .text-normal {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
+.iconfont {
+  font-size:64px;
+}
+
 hr {
   border-color: #F05F40;
   border-width: 3px;
